@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset = "utf-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1">   
+
+    <title>Happy Chicken Fast Food Restaurant</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  </head>
+
+  <body style="background-color: #fff;">
+    <div class="header" style="position: absolute" >
+      <a href="main.html" class="logo"><img src="pictures\logo.png" ></a>    
+      <div class="navbar">          
+          <a href="main.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="allergens.html">Allergens</a>
+          <a href="about us.html">About Us</a>
+          <a href="delivery.html">Delivery</a>
+          <a href="quality.html">Quality</a>
+          <a href="reservation.html">Reservation</a>
+          <a href="reviews.html">Reviews</a>           
+      </div>
+    </div>
+    
+    <section class="home" id="home">
+      <a class="prev" onclick="previousSlide()">&#10094;</a>
+      <div class="home-slider">
+        <div class="welcome"><h3>Welcome To The Happy Chicken Restaurant!</h3></div>
+        <div class="wrapper">
+          <div class="slide">
+            <div class="content">
+              <span>Our Specialty For You</span>
+              <h3>The Happy Chicken</h3>
+              <p>Our Restaurant's Crowned Achievement</p>
+              <a href="delivery.html" class="btn">Order</a>
+              <a href="menu.html" class="btn">View Menu</a>
+            </div>
+            <div class="image">
+              <img src="pictures/slider-1.jpg">
+            </div>
+          </div>
+          <div class="slide">
+            <div class="content">
+              <span>Our Specialty For You</span>
+              <h3>Little John</h3>
+              <p>The Big Chicken in the Small Burger.</p>
+              <a href="delivery.html" class="btn">Order</a>
+              <a href="menu.html" class="btn">View Menu</a>
+            </div>
+            <div class="image">
+              <img src="pictures/slider-2.jpg">
+            </div>
+          </div>
+          <div class="slide">
+            <div class="content">
+              <span>Our Specialty For You</span>
+              <h3>Trio Crispies</h3>
+              <p>Three of our most ordered burger.</p>
+              <a href="delivery.html" class="btn">Order</a>
+              <a href="menu.html" class="btn">View Menu</a>
+            </div>
+            <div class="image">
+              <img src="pictures/slider-3.jpg">
+            </div>
+          </div>          
+        </div>
+      </div>
+      <a class="next" onclick="nextSlide()">&#10095;</a>
+    </section>
+    <footer style = "position: absolute;">
+      
+      <h1>Contact Us:</h1>
+      <ul class="adress">
+      <p>Studentska Street №1<br>Varna, Bulgaria, 9000</p>
+      <p>Phone: <a href="tel:+359876367836">+359 876 367 836</a></p>
+      <p>Email: <a href="mailto:HappyRestaurant@gmail.com">HappyRestaurant@gmail.com</a></p>
+      <p>Website: <a href="http://127.0.0.1:5500/main.html">www.HappyChicken.com</a></p>
+      
+      </ul>
+      <ul class="social">
+        <li><p>Follow us on social media:</p></li>
+        <li><a href="https://www.facebook.com/tu.varna">Facebook</a></li>
+        <li><a href="https://www.instagram.com/tu.varna/?hl=bg">Instagram</a></li>
+        <li><a href="https://twitter.com/technicalvarna?lang=bg">Twitter</a></li>
+      </ul>
+      <p class="thanks">Thank you for choosing our restaurant!<br>Copyright &copy; 2023 Happy Chicken Restaurant</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
