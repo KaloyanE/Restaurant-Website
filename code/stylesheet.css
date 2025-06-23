@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+/* all */
+html{  
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
+}
+*
+{
+  font-family: 'Roboto', sans-serif;
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border:none;
+  outline:none;
+  transition:all .2s linear;
+ 
+}
+/* header */
+.header{
+  top:0;
+  left:0;
+  right:0;
+  background: #333;
+  padding: 1rem 7%;
+  justify-content: space-between;
+  display:flex;
+  align-items: center;
+}
+.logo img
+{
+  height: 80pt;
+}
+ .navbar a{
+  color: orange;
+font-size: 1.7rem;
+padding: .5rem 1.5rem;
+border: .1rem solid transparent;
+}
+ .navbar a.active, .navbar a:hover
+{
+  color: white;
+  border: 1pt solid rgba(205, 170, 124, 0.2);
+}
+
+/* home page */
+section{
+  background-color: #fff;
+  padding:2rem 9%;
+}
+.home-slider .welcome{
+  text-align: center;
+  font-size: 2rem;
+padding-top: 10rem;
+color:orange;
+text-shadow: #333;
+
+}
+.home .home-slider .slide{
+  display:flex;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:2rem;
+  padding-top:1rem;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.home .home-slider .slide .image{
+  flex: 1 1 45rem;
+}
+.home .home-slider .slide .content
+{
+  margin-right: 80px;
+}
+.home .home-slider .slide .content span{
+  font-size:4rem;
+  color: green;
+}
+.home .home-slider .slide .content h3{
+  font-size:4rem;
+  color: black
+}
+.home .home-slider .slide .content p{
+font-size: 1.5rem;
+color: grey;
+padding: 0.5rem 0;
+line-height: 1.5
+}
+/* buttons */
+.btn{
+  margin-top: 2rem;
+  display: inline-block;
+  font-size: 1.7rem;
+  color:#fff;
+  background:orange;
+  border-radius: .5rem;
+  cursor:pointer;
+  padding: 0.8rem 3rem;
+}
+.btn:hover{
+  background:lightgreen;
+  letter-spacing:.1rem;
+}
+.slide .image img {
+  border-radius: 20rem;
+  width: 100%;
+  height: 30rem;
+}
+/* slide buttons home page */
+.prev,
+.next {
+  position: absolute;  
+  top: 43%;
+  margin-top: 40px;
+  display: inline-block;
+  font-size: 20px;
+  color:#fff;
+  background-color: orange;;
+  border-radius: .5rem;
+  cursor:pointer;
+  padding: 0.8rem 2rem;
+}
+
+.prev:hover,
+.next:hover {
+  opacity: 0.5;
+  background-color: lightgreen;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+
+/* headings */
+.sub-heading{
+  text-align: center;
+  color:green;
+  font-size: 2rem;
+  padding-top:1rem;
+}
+.heading{
+  text-align: center;
+  color:orange;
+  font-size: 3rem;  
+  text-transform: uppercase;
+}
+
+/* order page */
+
+.order form{
+  
+  width: 90rem;
+  border-radius: .5rem;
+  box-shadow: black;
+  border: .1rem solid rgba(0, 0, 0, 2);
+  background: #fff;
+  padding: 1.5rem;
+  margin:0 auto;
+}
+.order form .inputBox{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+.order form .inputBox .input{
+  width: 49%;
+}
+.order form .inputBox .input span{
+  display: block;
+  padding: .5rem 0;
+  font-size: 1.5rem;
+  color: green;
+}
+.order form .inputBox .input input,
+.order form .inputBox .input textarea{
+  background: #eee;
+  border-radius: .5rem;
+  padding: 1rem;
+  font-size:1.6rem;
+  text-transform: none;
+  color:black;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+.order form .inputBox .input textarea{
+  height:20rem;
+  resize:none;
+}
+.order form .btn{
+  margin-top: 0;
+}
+
+/* reservation page */
+.reservation{
+  align-content: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.reservation .form{
+  background: #eee;
+  width: 100%;
+  padding: 1rem 15%;
+  display: flex;
+  flex-direction: column;
+}
+.reservation form{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.reservation .form-holder{
+  display:inline-block;
+  margin-top: 3rem;
+  width:45%;
+  justify-content:space-between;
+ margin-left: 15rem;
+}
+.reservation .form-holder  input,
+.reservation .form-holder  select
+{
+  display: block;
+  margin:2rem 0;
+  width: 100%;
+  background:none;
+  color: green;
+  border-bottom: .1rem solid #333;
+  font-size: 1.8rem;
+}
+.reservation .form-holder  select option{
+  color: black;
+}
+.reservation .image{ 
+  width: 55%;
+  display:flex;
+  
+}
+.reservation .image img{
+  border-radius: 10rem;
+}
+.reservation .form-holder .btn{
+  margin-top: 1rem;
+  display: inline-block;
+  font-size: 1.7rem;
+  color:#fff;
+  background:orange;
+  border-radius: .5rem;
+  cursor:pointer;
+  padding: 0.8rem 3rem;
+  border-bottom: 0;
+}
+.reservation .form-holder .btn:hover{
+  background:lightgreen;
+  letter-spacing:.1rem;
+}
+
+/* about us page */
+.container {
+  
+			display: flex;
+			flex-direction: row;
+			align-items:center;
+			justify-content:center;
+
+			position: relative;
+      margin-top: 5rem;
+      margin-bottom: 2.5rem;
+		}  
+    .container .writing{
+      padding: 1.5rem;
+      display: inline-block;
+      margin-left: 12rem;
+      border-left:  2px solid orange;
+      border-bottom:  2px solid orange;
+    } 
+    .container .writingb{
+      padding: 1.5rem;
+      display: inline-block;
+      margin-right: 12rem;
+      border-right:  2px solid orange;
+      border-bottom:  2px solid orange;
+      
+    } 
+    .container p{
+      font-size: 14px;
+      color: black;
+      text-align: center;
+      justify-content: center;
+      text-shadow: black;
+      font-weight: 500;   
+    }
+    /* menu page */
+    .star ,
+    .star-half{
+      cursor: pointer;
+      font-size: 25px;
+      color: green;
+    }
+    .menu{
+      padding:0 9%;
+    }
+    .menu .box-container{
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns:repeat(auto-fit,minmax(30rem,1fr)) ;
+      margin-bottom: 3rem;
+      margin-top: 3rem;
+    }
+    .menu .box-container .box{
+      padding: 20px;
+      background: #fff;
+      border:.1rem solid rgba(0, 0, 0, .2);
+      border-radius: .9rem;
+      border-color: green;
+      box-shadow: #333;      
+    }
+    .menu .box-container .box span{
+      font-size: 3rem;
+      margin-left: 5.85rem;
+    }
+    .menu .box-container .box p{
+      color: rgb(66, 66, 66);
+    }
+    .menu .box-container .box  .image{
+      height: 25rem;
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+    }
+    .menu .box-container .box .image img{
+      height: 100%;
+      width: 100%;
+      border-radius: .5rem;
+    }
+		
+/* quality page */
+    .quality {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-items: center;
+			max-width: 1200px;
+			margin: 20px auto;
+		}
+
+		.quality .item {
+			width: 48%;
+			background-color: #eee;
+			border: 3px solid green;
+			padding: 20px;
+			margin-bottom: 20px;
+			box-sizing: border-box;
+		}
+
+		.quality .item img {
+			display: block;
+			max-width: 100%;
+			
+			margin: 0 auto;
+			margin-bottom: 10px;
+		}
+
+		.quality .item h2 {
+			font-size: 2rem;
+      color: green;
+			text-align: center;
+			margin: 0;
+		}
+
+		.quality .item p {
+			font-size: 1rem;
+			color: #666;
+			text-align: center;
+			margin: 5px 0 0;
+		}
+
+    /* allergens page */
+    table {
+      border-collapse: collapse;
+       margin: 30px 7%;
+    }
+    
+    th, td {
+      border: 2px solid green;
+      padding: 15px;
+      text-align: center;
+      background-color: white;      
+    }
+    
+    th {
+      
+      background-color: darkgray;
+    }
+    td{
+      font-size: 3rem;
+      color: orange;
+    }
+    tr .text{
+      font-size: 15pt;
+      color: black;
+      text-shadow: #333;
+      font-weight: 500;
+    }
+
+    /* reviews page */
+    .reviews{
+      padding: 2rem 7%;
+    }
+    .reviews .block{
+padding: 2rem;
+margin-bottom: 2rem;
+box-shadow: #666;
+border: 4px solid green;
+border-radius: 0.5rem;
+position:relative;
+    }
+   
+    .reviews .block .user{
+      display: flex;
+      gap:1.5rem;
+      align-items: center;
+      padding-bottom: 1.5rem;
+    }
+    .reviews .block .user img{
+      height: 7rem;
+      width:7rem;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .reviews .block .user h3{
+      color:black;
+      font-size: 2rem;
+      padding-bottom:.5rem;
+
+    }
+    .reviews .block .user .stars{
+      font-size:1.3rem;
+      color:green;
+    }
+    .reviews .block .user p{
+      font-size: 1.5rem;
+      line-height: 1.8;
+      color: orange;
+    }
+    .reviews .block .quote{
+      position: absolute;
+      top:1px;
+      right:2rem;
+      font-size:10rem;
+      color: green;
+          }
+
+
+    /* footer */
+ul{
+  font-size: 20px;
+  color:lightslategray;
+}
+footer h1{
+  color:green;
+}
+.thanks{
+  font-size: 20px;
+  color:lightslategray;
+}
+    footer {
+  
+      bottom:0;
+      left:0;
+      right:0;
+      background: #333;
+      padding: 1rem 7%;
+      justify-content: space-between;
+      display: flex;
+      align-items: center;
+    }
